@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+html, body { 
+    overflow-x: hidden; 
+}
+
+
+:root {
+    --primary-color: #000; 
+    --accent-color: #FF0000; 
+    --text-color: #fff; 
+    --background-color: #222; 
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 5px;
+    background-color: var(--text-color);
+    border-radius: 5px;
+}
+
+
+/* Hobbies Section */
+.hobbies {
+    padding: 100px 10%;
+    background-color: var(--background-color);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.hobbies h2 {
+    margin-top: 50px;
+    font-size: 50px;
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hobbies p {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.hobby-item {
+    margin-bottom: 50px;
+}
+
+.hobby-item h3 {
+    font-size: 30px;
+    color: var(--accent-color);
+    margin-top: 20px;
+}
+
+.hobby-item p {
+    font-size: 18px;
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.hobbies ul {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 40px;
+}
+
+.hobbies ul li {
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.hobbies ul li i {
+    font-size: 30px; 
+    color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+    color: var(--text-color);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: var(--primary-color);
+    }
+
+    
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+    .hobbies {
+        padding-top: 120px;
+        padding: 50px 5%;
+    }
+
+    .hobbies h2 {
+        font-size: 36px;
+    }
+
+    .hobbies p {
+        font-size: 18px;
+    }
+
+    .hobbies ul {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .hobbies ul li {
+        font-size: 20px;
+    }
+
+    .hobby-item {
+        margin-bottom: 30px;
+    }
+
+    .hobby-item h3 {
+        font-size: 24px;
+    }
+
+    .hobby-item p {
+        font-size: 16px;
+    }
+}

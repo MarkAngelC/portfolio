@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Castro | Portfolio</title>
+    <link rel="icon" href="portfolio-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header"> 
+        <a href="index.html" class="logo"><span>Mark Castro</span></a>
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Portfolio</a>
+            <a href="hobbies.html">Hobbies and Interest</a>
+            <a href="cheatsheet.html">HTML Cheat sheet</a>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="home-content">
+                <h2>How you doin'</h2><br>
+                <h1>I'm <span>Mark<br>A Software Development Student</span></h1>
+                <p>Welcome to my project portfolio!<br><br>Hi! I’m Mark Angel Castro, a software development student at Bow Valley College in Calgary, AB.</p>
+                <div class="btn-box">
+                    <a href="CV.pdf" class="btn-1" download>Download CV</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="img-box">
+                <img src="IMG.jpg" alt="Mark Castro" />
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About<span> Me</span></h2><br>
+                <h3>Software Development Student</h3><br>
+                <p>Hi! I’m Mark Angel Castro, I am a Software Development student at Bow Valley College. I'm someone who loves to explore
+                     life through a variety of passions. Gaming is my ultimate way to unwind and challenge myself, whether it's diving into immersive 
+                     worlds or testing my skills in competitive play. When I'm not gaming, you’ll find me biking through scenic trails or traveling to new places, 
+                     always seeking adventure and fresh experiences. Sports also play a huge part in my life—whether playing or watching, I enjoy the energy, 
+                     competition, and teamwork involved. Always up for a challenge, I thrive on staying active and exploring the world around me. 
+                     I'm also passionate about new trends in technology,
+                     constantly staying up-to-date with the latest innovations and discovering how they can change our lives.</p><br><br>
+                <a href="#education" class="btn-2">Experience</a>
+            </div>
+        </section>
+        <section class="education-work">
+            <section id="education">
+            <h2>Education & Work Experience</h2>
+            <section class="education">
+                <h3>Education</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diploma in Software Development</td>
+                            <td>Bow Valley College, Calgary, AB</td>
+                            <td>2024- Present</td>
+                        </tr>
+                        <tr>
+                            <td>Bachelor Science in Information and Communication Technoogy</td>
+                            <td>Pangasinan State University, Asingan Campus</td>
+                            <td>2009-2013</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            
+            <section class="work">
+                <h3>Work Experience</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Company</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Surveillance Investigator</td>
+                            <td>Deerfoot Inn & Casino, Calgary, AB</td>
+                            <td>2024-Present</td>
+                        </tr>
+                        <tr>
+                            <td>Lead Filtering Assistant</td>
+                            <td>Kount Katalyst LLC, Remote</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>Surveillance Operator</td>
+                            <td>Thunderbird Resort and Casino Inc.</td>
+                            <td>2016-2024</td>
+                        </tr>
+                        <tr>
+                            <td>IT Staff</td>
+                            <td>Eunice Incorporated</td>
+                            <td>2014-2015</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your-email@example.com">m.castro199@mybvc.ca</a></p>
+            <form action="submit" method="POST">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+                </fieldset>
+                <br>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/makkuenzeru.castro" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/mark-angel-castro-1b706a233/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/MarkAngelC/finalproject" class="fa fa-github"></a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Mark Castro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
