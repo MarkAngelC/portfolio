@@ -98,7 +98,7 @@ footer p {
 .home {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
     display: flex;
